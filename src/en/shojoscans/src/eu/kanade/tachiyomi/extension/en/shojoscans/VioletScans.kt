@@ -8,5 +8,7 @@ class VioletScans : MangaThemesia(
     "en",
     mangaUrlDirectory = "/comics",
 ) {
+    override fun chapterListSelector() = "li[data-num]:has(> a[href]:not([data-bs-target='#lockedChapterModal']))"
+
     override val id = 9079184529211162476
 }
